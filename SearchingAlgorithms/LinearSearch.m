@@ -1,18 +1,21 @@
 #import "LinearSearch.h"
 
-@implementation LinearSearch
+@implementation LinearSearch {
+    NSMutableArray * array;
+}
 
-@synthesize array;
-
-+ (id) initWithSize: (int) size {
-    LinearSearch *search = [[LinearSearch alloc] init];
-    search.array = [[NSMutableArray alloc] init];
+- (instancetype) initWithSize: (int) size {
+    self = [super init];
     
-    for (int index = 0; index <= size; ++index) {
-        [search.array addObject: [NSNumber numberWithInteger: arc4random_uniform(10)]];
+    if (self) {
+        self->array = [[NSMutableArray alloc] init];
+        
+        for (int index = 0; index <= size; ++index) {
+            [self->array addObject: [NSNumber numberWithInt: arc4random_uniform(10)]];
+        }
     }
     
-    return search;
+    return self;
 }
 
 - (void) printArray {
@@ -29,7 +32,7 @@
     int index = -1;
     
     for (int i = 0; i < array.count; ++i) {
-        if ([array objectAtIndex:i] == [NSNumber numberWithInteger: element]) {
+        if ([array objectAtIndex:i] == [NSNumber numberWithInt: element]) {
             index = i;
             break;
         }

@@ -8,7 +8,7 @@ int main(int argc, const char * argv[]) {
         
         printf("Linear search:\n");
         
-        LinearSearch *search = [LinearSearch initWithSize: 15];
+        LinearSearch *search = [[LinearSearch alloc] initWithSize: 15];
         int foundElementIndex = [search search: elementToSearch];
         
         [search printArray];
