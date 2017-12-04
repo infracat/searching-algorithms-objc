@@ -6,32 +6,24 @@
     self = [super init];
     
     if (self) {
-        self.array = [[NSMutableArray alloc] init];
+        NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
         
-        for (int index = 0; index <= size; ++index) {
-            [self.array addObject: [NSNumber numberWithInt: arc4random_uniform(10)]];
+        for (int index = 0; index < size; ++index) {
+            [mutableArray addObject: [NSNumber numberWithInt: arc4random_uniform(10)]];
         }
+        
+        self.array = [mutableArray copy];
     }
     
     return self;
 }
 
-- (void) printArray {
-    printf("Array: ");
-    
-    for (NSNumber *number in _array) {
-        printf("%i ", number.intValue);
-    }
-    
-    printf("\n");
-}
-
 - (int) search: (int) element {
     int index = -1;
     
-    for (int i = 0; i < _array.count; ++i) {
+    for (int i = 0; i < [self.array count]; ++i) {
         
-        if ([[_array objectAtIndex:i] isEqualToNumber: [NSNumber numberWithInt: element]]) {
+        if ([[self.array objectAtIndex:i] isEqualToNumber: [NSNumber numberWithInt: element]]) {
             index = i;
             break;
         }

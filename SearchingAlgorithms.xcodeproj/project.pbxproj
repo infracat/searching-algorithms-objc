@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		578D6EC21FD1D14200986035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D6EC11FD1D14200986035 /* main.m */; };
 		578D6ECD1FD1D1E400986035 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D6ECC1FD1D1E400986035 /* LinearSearch.m */; };
+		578D6ED01FD5BFBE00986035 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D6ECF1FD5BFBE00986035 /* BinarySearch.m */; };
+		578D6ED31FD5C01A00986035 /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D6ED21FD5C01A00986035 /* Search.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		578D6EC11FD1D14200986035 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		578D6ECB1FD1D1E400986035 /* LinearSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearSearch.h; sourceTree = "<group>"; };
 		578D6ECC1FD1D1E400986035 /* LinearSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearSearch.m; sourceTree = "<group>"; };
+		578D6ECE1FD5BFBE00986035 /* BinarySearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		578D6ECF1FD5BFBE00986035 /* BinarySearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
+		578D6ED11FD5C01A00986035 /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		578D6ED21FD5C01A00986035 /* Search.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				578D6EC11FD1D14200986035 /* main.m */,
 				578D6ECB1FD1D1E400986035 /* LinearSearch.h */,
 				578D6ECC1FD1D1E400986035 /* LinearSearch.m */,
+				578D6ECE1FD5BFBE00986035 /* BinarySearch.h */,
+				578D6ECF1FD5BFBE00986035 /* BinarySearch.m */,
+				578D6ED11FD5C01A00986035 /* Search.h */,
+				578D6ED21FD5C01A00986035 /* Search.m */,
 			);
 			path = SearchingAlgorithms;
 			sourceTree = "<group>";
@@ -125,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				578D6ECD1FD1D1E400986035 /* LinearSearch.m in Sources */,
+				578D6ED31FD5C01A00986035 /* Search.m in Sources */,
+				578D6ED01FD5BFBE00986035 /* BinarySearch.m in Sources */,
 				578D6EC21FD1D14200986035 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
